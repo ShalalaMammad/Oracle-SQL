@@ -1,0 +1,15 @@
+1. Write a query to display each employee's first name, last name, and a calculated column that categorizes their salary into 'High', 'Medium', and 'Low'. Create the salary grade.
+
+SELECT FIRST_NAME, 
+       LAST_NAME,
+       SALARY,
+       CASE 
+           WHEN SALARY <5000 THEN 'Low'
+           WHEN SALARY BETWEEN 5000 AND 10000 THEN 'Medium'
+           WHEN SALARY >10000 THEN 'High' END AS SALARY_GRADE
+FROM EMPLOYEES;
+
+2. Write a query to list employees whose salaries are above the average salary of their respective departments. Calculate the average salary per department.
+
+
+              
